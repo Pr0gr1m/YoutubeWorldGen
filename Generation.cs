@@ -49,7 +49,7 @@ public class Generation : MonoBehaviour
         for (int y = -30; y <= posY; y++)
         {
             TileType type = TileType.Grass;
-            if(y-posY <= 3)
+            if(posY - y >= 3)
             {
                 type = TileType.Stone;
             }
@@ -66,3 +66,4 @@ public class Generation : MonoBehaviour
         tileObject.SetTileType(type);
     }
 }
+
